@@ -7,6 +7,19 @@ body
 html
 {
     text-transform: uppercase;
+    scroll-behavior: smooth;
+}
+.overlay-div
+{
+    position: absolute;
+    min-height: 50vh;
+    z-index: -2;
+}
+
+.overlay-div  path
+{
+    min-height: 100%;
+    width: 100%;
 }
 hr.project-divider
 {
@@ -51,7 +64,7 @@ hr.project-divider::after
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1.8em;
     font-weight: lighter;
-    color: #7067CF !important;
+    color: white !important;
 }
 #intro
 {
@@ -59,7 +72,7 @@ hr.project-divider::after
     background-color: #330C2F;
     padding: 5rem 20px;
     border-radius: 15px;
-    background:linear-gradient(to right , rgba(51, 12, 47 , 0.9) ,#330C2F , rgba(51, 12, 47 , 0.9));
+    background:linear-gradient(to right , rgba(51, 12, 47 , 1) ,#330C2F , rgba(51, 12, 47 , 1));
     background-repeat: no-repeat;
     background-size: auto;
     transform-style: preserve-3d;
@@ -199,6 +212,18 @@ span
     transform-style: preserve-3d;
     perspective: 1000px;
 }
+.video-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(5px 5px 10px #ababab);
+  }
+  
+.video-div iframe {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 15px;
+  }
 .img-gal img
 {
     animation: images 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
