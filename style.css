@@ -1,6 +1,7 @@
 body
 {
     background: #B7C0EE !important;
+    overflow-x: hidden;
 }
 
 
@@ -55,8 +56,8 @@ hr.project-divider::after
 }
 .navbar .nav-link:hover
 {
-    color: #7067CF !important;
-    border: 2px solid rgba(112, 103, 207 , 1);
+    color: white !important;
+    border: 2px solid white;
     border-radius: 10px;
 }
 .navbar .navbar-brand
@@ -226,7 +227,7 @@ span
   }
 .img-gal img
 {
-    animation: images 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    /* animation: images 1s cubic-bezier(0.455, 0.03, 0.515, 0.955); */
     border-radius: 5px;
     /* box-shadow: 1px 1px 10px 3px #7067CF; */
     margin: 15px 0px;
@@ -252,7 +253,7 @@ div.project-link
     margin-bottom: 3rem;
     border: 3px solid #7067CF;
     border-radius: 15px;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) !important;
 }
 div.project-link:hover
 {
