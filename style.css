@@ -146,12 +146,15 @@ span {
   justify-content: center;
   margin: 20rem 0;
 }
-.about-section .image {
-  background-image: url(imgs/avatar3.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -30px -50px;
+.about-section .my-desc
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
+
 .about-section h2.aboutme-title {
   font-weight: 700;
   color: #330c2f !important;
@@ -448,4 +451,6 @@ li.footer-links:hover ~ li.footer-links p {
   .tags-div h2 {
     font-size: 1.3rem !important;
   }
+
+
 }
