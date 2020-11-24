@@ -197,12 +197,14 @@ span
     padding-left: 10rem;
     padding-right: 10rem;
 }
+
 .project h2
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 3.8rem;
     color: #330C2F;
 }
+
 .project-desc p
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -268,7 +270,85 @@ div.project-link:hover
     text-decoration: none;
     letter-spacing: 2px;
 }
+.skills-section
+{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-section .language
+{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.2);
+    background-size: contain;
+    background-position: top left;
+    border-radius: 20px;
 
+}
+.tags-div
+{
+
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.skills-section .tags-div .tag
+{
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30%;
+    max-width: 20%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    min-height: 6vh;
+    background-color: #7067CF;
+    color: #ababab !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+.skills-section .tags-div .tag:hover
+{
+    cursor: pointer;
+    background-color: rgb(72, 67, 134);
+    border: 4px solid #330C2F;
+    color: white !important;
+}
+.progress {
+    background: rgba(51, 12, 47,1) !important;
+    justify-content: flex-start;
+    border-radius: 100px !important;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+  }
+  
+  .progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #7067cf;
+    border-radius: 100px;
+    background: #7067cf;
+    min-height: 80%;
+    width: 0;
+  }
+
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
 @keyframes my-work-sec
 {
     0%
