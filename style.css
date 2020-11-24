@@ -146,9 +146,7 @@ span {
   justify-content: center;
   margin: 20rem 0;
 }
-.about-section .my-desc
-{
-
+.about-section .my-desc {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -451,6 +449,4 @@ li.footer-links:hover ~ li.footer-links p {
   .tags-div h2 {
     font-size: 1.3rem !important;
   }
-
-
 }
