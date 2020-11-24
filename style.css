@@ -346,12 +346,10 @@ ul.footer-links-ul {
   justify-content: space-between;
   margin: auto;
 }
-li.footer-links
-{
+li.footer-links {
   margin-right: 2rem;
 }
-li.footer-links:nth-of-type(5)
-{
+li.footer-links:nth-of-type(5) {
   margin-left: 0;
 }
 li.footer-links a {
@@ -440,18 +438,14 @@ li.footer-links:hover ~ li.footer-links p {
     width: 100%;
     display: flex;
     flex-direction: column;
-
   }
-  h1.heading
-  {
+  h1.heading {
     font-size: 1.7rem;
   }
-  h3 span
-  {
+  h3 span {
     font-size: 1.3rem;
   }
-  .tags-div h2
-  {
+  .tags-div h2 {
     font-size: 1.3rem !important;
   }
 }
