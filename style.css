@@ -159,6 +159,38 @@ span
 {
     justify-content: flex-start !important;
 }
+.about-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20rem 0;
+}
+.about-section .image
+{
+    background-image: url(imgs/avatar3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -30px -50px;
+}
+.about-section h2.aboutme-title
+{
+    font-weight: 700;
+    color: #330C2F !important;
+    font-size: 3rem;
+    animation: none;
+}
+.about-section p
+{
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #7067CF;
+}
+span.bold
+{
+    font-weight: 700;
+    color: #7067CF;
+}
 .lead-text h3
 {
     
@@ -290,7 +322,7 @@ div.project-link:hover
     background-size: contain;
     background-position: top left;
     border-radius: 20px;
-
+    filter: drop-shadow(3px 3px 10px #ababab);
 }
 .tags-div
 {
