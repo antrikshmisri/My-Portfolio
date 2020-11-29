@@ -602,10 +602,11 @@ li.footer-links:hover ~ li.footer-links p {
   }
   .contact-me-section .contact-desc p.contact-tagline
   {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .contact-me-section .contact-desc .contact-link a
   {
     color: #330c2f;
   }
+
 }
