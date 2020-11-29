@@ -397,6 +397,13 @@ div.project-link:hover {
   height: 100%;
   top: 0;
   left: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
 }
 /*
     This is the outer svg wrapper that the SVG itself will 
@@ -596,17 +603,13 @@ li.footer-links:hover ~ li.footer-links p {
   {
     background: linear-gradient(144deg, rgba(184,192,239,1) 0%, #7067cf 100%);
   }
-  .contact-me-section .contact-desc .contact-link
-  {
-    background-color: #b7c0ee;
-  }
+
   .contact-me-section .contact-desc p.contact-tagline
   {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .contact-me-section .contact-desc .contact-link a
   {
     color: #330c2f;
   }
-
 }
