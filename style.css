@@ -35,6 +35,24 @@ hr.project-divider::after {
   padding: 1rem;
   background-color: #b7c0ee;
 }
+hr.footer-hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #330c2f, #7067cf, #330c2f);
+}
+hr.footer-hr::after {
+  content: "§";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: #330c2f;
+  color: #b7c0ee;
+}
 /* .navbar
 {
     background-color: #CBF3D2;
@@ -501,7 +519,18 @@ li.footer-links a:hover {
 li.footer-links:hover ~ li.footer-links p {
   animation: wave-animation 0.3s infinite;
 }
-
+.footer .made-by
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .made-by p
+{
+  font-size: 1.5rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #ababab;
+}
 @keyframes wave-animation {
   0%,
   100% {
