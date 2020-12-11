@@ -9,6 +9,18 @@ html {
   text-transform: uppercase;
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar
+{
+  width: 0.75rem;
+}
+body::-webkit-scrollbar-track
+{
+  background: #330c2f;
+}
+body::-webkit-scrollbar-thumb{
+  background:#7067cf;
+  border-radius: 10px;
+}
 .loader-wrapper {
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   z-index: 4;
@@ -142,6 +154,7 @@ hr.footer-hr::after {
   font-weight: lighter;
   color: white !important;
 }
+
 #intro {
   box-shadow: 1px 1px 10px 2px #330c2f;
   background-color: #330c2f;
