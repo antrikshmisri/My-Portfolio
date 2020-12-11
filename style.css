@@ -91,6 +91,7 @@ body::-webkit-scrollbar-thumb{
   justify-content: flex-end;
   align-items: center;
   z-index: 3;
+  pointer-events: none;
 }
 hr.project-divider {
   margin-top: 10rem;
@@ -199,6 +200,12 @@ h1 {
 h1.heading
 {
   font-weight: 600;
+  
+}
+h1.heading span.name
+{
+  color: #7067cf;
+  text-shadow: -0.25rem 0px 0px #b7c0ee;
 }
 hr {
   background-image: linear-gradient(to right, #b7c0ee, #7067cf, #b7c0ee);
@@ -687,6 +694,10 @@ li.footer-links:hover ~ li.footer-links p {
   }
   h1.heading {
     font-size: 1.7rem;
+  }
+  h1.heading span.name
+  {
+    text-shadow: none;
   }
   h3 span {
     font-size: 1.3rem;
