@@ -133,6 +133,7 @@ hr.footer-hr::after {
     background-color: #CBF3D2;
 } */
 .navbar .nav-link {
+  font-display: swap;
   font-size: 1.2rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
   border: 2px solid rgba(112, 103, 207, 0);
@@ -150,6 +151,7 @@ hr.footer-hr::after {
   border-radius: 10px;
 }
 .navbar .navbar-brand {
+  font-display: swap;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.8em;
   font-weight: lighter;
@@ -183,6 +185,7 @@ hr.footer-hr::after {
   text-decoration: none;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 2rem;
+  font-display: swap;
 }
 img.skill-icon {
   max-height: auto;
@@ -296,6 +299,7 @@ span.bold {
   overflow: hidden;
   transform-style: preserve-3d;
   perspective: 1000px;
+  font-display: swap;
 }
 .my-work h2 {
   animation: my-work-sec 2s cubic-bezier(0.23, 1, 0.32, 1);
@@ -323,11 +327,13 @@ h2:focus {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 3.8rem;
   color: #330c2f;
+  font-display: swap;
 }
 
 .project-desc p {
   font-family: "Yanone Kaffeesatz", sans-serif;
   color: #330c2f;
+  font-display: swap;
 }
 .img-gal {
   transform-style: preserve-3d;
@@ -369,6 +375,7 @@ div.project-link {
   border: 3px solid #7067cf;
   border-radius: 15px;
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) !important;
+  font-display: swap;
 }
 div.project-link:hover {
   transform: scale(1.1, 1.1);
@@ -616,6 +623,7 @@ li.footer-links:hover ~ li.footer-links p {
   font-size: 1.5rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
   color: #ababab;
+  font-display: swap;
 }
 @keyframes wave-animation {
   0%,
