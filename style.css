@@ -9,16 +9,14 @@ html {
   text-transform: uppercase;
   scroll-behavior: smooth;
 }
-body::-webkit-scrollbar
-{
+body::-webkit-scrollbar {
   width: 0.75rem;
 }
-body::-webkit-scrollbar-track
-{
+body::-webkit-scrollbar-track {
   background: #330c2f;
 }
-body::-webkit-scrollbar-thumb{
-  background:#7067cf;
+body::-webkit-scrollbar-thumb {
+  background: #7067cf;
   border-radius: 10px;
 }
 .loader-wrapper {
@@ -51,7 +49,6 @@ body::-webkit-scrollbar-thumb{
   z-index: 3;
 }
 
-
 .loader:before {
   position: absolute;
   content: "";
@@ -83,8 +80,7 @@ body::-webkit-scrollbar-thumb{
   min-height: 100%;
   width: 100%;
 }
-.ribbon-div
-{
+.ribbon-div {
   min-width: 100%;
   position: absolute;
   display: flex;
@@ -132,6 +128,61 @@ hr.footer-hr::after {
 {
     background-color: #CBF3D2;
 } */
+.navbar-toggler {
+  border-radius: 50% !important;
+  outline: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px !important;
+  padding: 0 !important;
+  border-bottom: none;
+}
+
+.navbar-toggler-icon {
+  outline: none;
+  /* background-color: #dcedff; */
+  border-radius: 50%;
+  margin: 0 0 !important;
+  min-width: 50px;
+  min-height: 50px;
+}
+.ham {
+  background-color: #330c2f !important;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #b7c0ee;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
 .navbar .nav-link {
   font-display: swap;
   font-size: 1.2rem;
@@ -147,8 +198,7 @@ hr.footer-hr::after {
 }
 .navbar .nav-link:hover {
   color: white !important;
-  border: 2px solid white;
-  border-radius: 10px;
+  border-bottom: 2px solid white;
 }
 .navbar .navbar-brand {
   font-display: swap;
@@ -159,6 +209,7 @@ hr.footer-hr::after {
 }
 
 #intro {
+  position: relative;
   box-shadow: 1px 1px 10px 2px #330c2f;
   background-color: #330c2f;
   padding: 5rem 20px;
@@ -173,6 +224,29 @@ hr.footer-hr::after {
   background-size: auto;
   transform-style: preserve-3d;
   perspective: 1000px;
+}
+#intro .ill-svg {
+  border-top-left-radius: 15px;
+  position: absolute;
+  max-width: 30%;
+  max-height: 30%;
+}
+#intro .space-svg {
+  top: 0;
+  left: 0;
+}
+a.name-link {
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-decoration: none;
+  color: #b7c0ee;
+  border-bottom: 0px solid #443f8100;
+}
+a.name-link:hover {
+  color: #b7c0ee;
+  text-decoration: none;
+  filter: drop-shadow(2px 2px 10px #2c2853);
+  border-bottom: 5px solid #443f81;
+  text-shadow: 0px 0px 0px #959cc2, 0px 0px 0px #717694, 0px 0px 0px #53576d;
 }
 .skills {
   margin: 40px 10px;
@@ -194,21 +268,22 @@ img.skill-icon {
   filter: saturate(0%) drop-shadow(2px 2px 10px #7067cf);
 }
 h1 {
+  margin: auto;
+  width: fit-content;
   color: #7067cf;
   padding-left: 20px;
   padding-right: 20px;
   border-right: 4px solid #7067cf;
   animation: cur 1s steps(2) infinite;
 }
-h1.heading
-{
+h1.heading {
   font-weight: 600;
-  
+  background-image: linear-gradient(to right, #b7c0ee, #7067cf, #b7c0ee);
+  -webkit-background-clip: text;
 }
-h1.heading span.name
-{
-  color: #7067cf;
-  text-shadow: -0.25rem 0px 0px #b7c0ee;
+h1.heading span.name {
+  color: #b7c0ee;
+  text-shadow: 4px 4px 0px #7067cf, 8px 8px 0px #5750a0, 12px 12px 0px #474283;
 }
 hr {
   background-image: linear-gradient(to right, #b7c0ee, #7067cf, #b7c0ee);
@@ -458,7 +533,7 @@ div.project-link:hover {
 .contact-me-section {
   min-height: 20vh;
   display: flex;
-  align-items: center;
+
   justify-content: center;
 }
 .contact-me-section .content {
@@ -701,10 +776,9 @@ li.footer-links:hover ~ li.footer-links p {
     flex-direction: column;
   }
   h1.heading {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
-  h1.heading span.name
-  {
+  h1.heading span.name {
     text-shadow: none;
   }
   h3 span {
@@ -730,8 +804,7 @@ li.footer-links:hover ~ li.footer-links p {
       #7067cf 100%
     );
   }
-  .contact-banner h1.contact-heading
-  {
+  .contact-banner h1.contact-heading {
     font-size: 3.2rem;
   }
   .contact-me-section .contact-desc p.contact-tagline {
@@ -739,5 +812,8 @@ li.footer-links:hover ~ li.footer-links p {
   }
   .contact-me-section .contact-desc .contact-link a {
     color: #330c2f;
+  }
+  .ribbon-div {
+    display: none;
   }
 }

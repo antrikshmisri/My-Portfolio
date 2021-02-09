@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Antriksh Misri</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="shortcut icon" href="/imgs/websitelogo.png" type="images/x-icon">
     <link rel="stylesheet" href="style.css" />
@@ -31,9 +31,9 @@
       </svg>
     </div>
     <div class="container ribbon-div px-0 mx-0">
-      <img src="/imgs/group1/Group 9.png" alt="">
+      <img src="/imgs/group1/Group 9.png" alt="ribbon">
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="index.html">Antriksh Misri</a>
       <button
         class="navbar-toggler"
@@ -44,7 +44,17 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+      <svg class="ham hamRotate ham1 navbar-toggler-icon" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+        <path
+              class="line top"
+              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path
+              class="line middle"
+              d="m 30,50 h 40" />
+        <path
+              class="line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+      </svg>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -56,6 +66,7 @@
       </div>
     </nav>
     <div id="intro" class="container mt-2 lead-text">
+      <img class="ill-svg space-svg" src="./imgs/space.svg" alt="space svg">
       <div class="row align-items-center">
         <div class="col-lg-1 icons">
           <div class="col" data-aos="fade-right">
@@ -124,7 +135,7 @@
           </div>
         </div>
         <div class="col-lg-11 info text-center">
-          <h1 class="display-3 heading" data-aos="fade-right">Hi! I Am <span class="name">Antriksh Misri</span></h1>
+          <h1 class="display-3 heading" data-aos="fade-right">Hi! I Am <span class="name"><a class="name-link"href="https://translate.google.co.in/?sl=auto&tl=en&text=antriksh&op=translate" target="_blank">Antriksh</a> Misri</span></h1>
           <div id="code-editor" class="container-fluid text-left">
             <div class="row justify-content-center mt-4" data-aos="fade-up">
               <h3>
@@ -186,10 +197,10 @@
       </div>
       <div class="row my-5 img-gal">
         <div class="col-lg-6 col-md-12" data-aos="fade-left">
-          <img src="imgs/s1.webp" class="img-fluid"/>
+          <img alt="gallery-image" src="imgs/s1.webp" class="img-fluid"/>
         </div>
         <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="200">
-          <img src="imgs/s2.webp" class="img-fluid" />
+          <img alt="gallery-image" src="imgs/s2.webp" class="img-fluid" />
         </div>
       </div>
       <div class="row my-5 project-desc">
@@ -221,7 +232,7 @@
       </div>
       <div class="row my-5 img-gal">
         <div class="col-lg-12 col-md-12" data-aos="fade-down">
-          <img src="imgs/squared2.webp" class="img-fluid" />
+          <img alt="squared-logo" src="imgs/squared2.webp" class="img-fluid" />
         </div>
       </div>
       <div class="row my-4 unity-player"></div>
@@ -261,22 +272,22 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12 embed-responsive embed-responsive-16by9">
-                <iframe loading="lazy" width="500" height="600" src="https://www.youtube.com/embed/-NV5K5BuuVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="squared-trailer" loading="lazy" width="500" height="600" src="https://www.youtube.com/embed/-NV5K5BuuVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-12" data-aos="fade-left">
-          <img src="imgs/snowrender.webp" class="img-fluid" />
+          <img alt="3d-work-img" src="imgs/snowrender.webp" class="img-fluid" />
         </div>
         <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="200">
-          <img src="imgs/grassrender.webp" class="img-fluid" />
+          <img alt="3d-work-img" src="imgs/grassrender.webp" class="img-fluid" />
         </div>
         <div class="col-lg-6 col-md-12" data-aos="fade-left">
-          <img src="imgs/render.webp" class="img-fluid" />
+          <img alt="3d-work-img" src="imgs/render.webp" class="img-fluid" />
         </div>
         <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="200">
-          <img src="imgs/image3.webp" class="img-fluid" />
+          <img alt="3d-work-img" src="imgs/image3.webp" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -386,10 +397,10 @@
       <div class="row">
         <div class="col-lg-12 navbar-nav">
           <ul class="footer-links-ul">
-            <li class="footer-links nav-link"><a href="https://www.instagram.com/antrikshmisri/?hl=en"><img src="https://img.icons8.com/nolan/64/instagram-new.png"/></a></li>
-            <li class="footer-links nav-link"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=antrikshmisri@gmail.com&su=SUBJECT&body=BODY&bcc"><img src="https://img.icons8.com/nolan/64/email.png"/></a></li>
-            <li class="footer-links nav-link"><a href="https://www.linkedin.com/in/antriksh-misri-b631361a1/"><img src="https://img.icons8.com/nolan/64/linkedin.png"/></a></li>
-            <li class="footer-links nav-link"><a href="https://github.com/antrikshmisri"><img src="https://img.icons8.com/nolan/64/github.png"/></a></li>
+            <li class="footer-links nav-link"><a href="https://www.instagram.com/antrikshmisri/?hl=en"><img alt="contact-logo" src="https://img.icons8.com/nolan/64/instagram-new.png"/></a></li>
+            <li class="footer-links nav-link"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=antrikshmisri@gmail.com&su=SUBJECT&body=BODY&bcc"><img alt="contact-logo" src="https://img.icons8.com/nolan/64/email.png"/></a></li>
+            <li class="footer-links nav-link"><a href="https://www.linkedin.com/in/antriksh-misri-b631361a1/"><img alt="contact-logo" src="https://img.icons8.com/nolan/64/linkedin.png"/></a></li>
+            <li class="footer-links nav-link"><a href="https://github.com/antrikshmisri"><img alt="contact-logo" src="https://img.icons8.com/nolan/64/github.png"/></a></li>
             <li class="footer-links nav-link">
               <p>👋</p>
             </li>
