@@ -337,7 +337,6 @@ span {
     rgba(184, 192, 239, 1) 0%,
     rgba(104, 88, 176, 1) 100%
   );
-  padding: 2rem 4rem;
   max-width: 90%;
 }
 .about-section .my-desc {
@@ -358,7 +357,13 @@ span {
   font-size: 1.4rem;
   color: #7067cf;
 }
+.about-section .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about-section .image img {
+  max-height: 90vh;
   border-radius: 10px;
   filter: drop-shadow(2px 2px 10px #443f81);
 }
@@ -410,6 +415,11 @@ h2:focus {
   color: #330c2f;
   font-display: swap;
 }
+
+.project-link-div {
+  display: flex;
+  justify-content: center;
+}
 .img-gal {
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -439,8 +449,25 @@ h2:focus {
   width: 100%;
 }
 .img-gal img:hover {
-  box-shadow: 1px 1px 12px 5px #7067cf;
+  filter: drop-shadow(10px 10px 15px #7067cf);
   transform: scale(1.1, 1.1);
+}
+.carousel-inner {
+  border-radius: 9px !important;
+  filter: drop-shadow(6px 6px 15px #7067cf);
+}
+.carousel-control {
+  max-height: 50px;
+  max-width: 50px;
+  background-color: #330c2f;
+  border-radius: 50%;
+  margin: auto;
+}
+.carousel-control:nth-of-type(1) {
+  left: -4rem;
+}
+.carousel-control:nth-of-type(2) {
+  right: -4rem;
 }
 div.project-link {
   font-family: "Yanone Kaffeesatz", sans-serif;
